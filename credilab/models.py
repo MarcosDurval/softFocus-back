@@ -1,17 +1,17 @@
 from django.db import models
-
+import uuid
 # Create your models here.
 
 
 class Client(models.Model):
     class ListEvent(models.IntegerChoices):
-        excessive_rain = 1
-        frost = 2
-        hail = 3
-        drought = 4
-        gale = 5
-        lightning = 6
-
+        CHUVA_EXCESSIVA = 1
+        GEADA = 2
+        GRANIZO = 3
+        SECA = 4
+        VENDAVAL = 5
+        RAIO = 6
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=255)
     email = models.EmailField(max_length=144)
     cpf = models.CharField(max_length=11)
