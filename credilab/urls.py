@@ -1,7 +1,7 @@
 from django.urls import path, include
 
 from rest_framework import routers
-from credilab.api.views import ClientViewSet
+from credilab.api.viewset import ClientViewSet
 
 router = routers.DefaultRouter()
 
