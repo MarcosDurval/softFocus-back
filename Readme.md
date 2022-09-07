@@ -22,7 +22,7 @@ entre no diretório:
 cd softFocus-back
 ```
 
-#### Renomeei o arquivo .env.example que está no diretório softfocus para .env
+### Renomeei o arquivo .env.example que está no diretório softfocus para .env
 
 Criando um .venv
 
@@ -36,22 +36,22 @@ source .venv/bin/activate
 ```
 Instalando as dependências:
 ```
-python3 -m pip install requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 Executando makemigrations:
 ```
-python3 manage.py  makemigrations
+python3 manage.py makemigrations
 ```
 
 Executando migrate:
 
 ```
-python3 manage.py  migrate
+python3 manage.py migrate
 ```
 Executando o app:
 
 ```
-python3 manage.py  runserver
+python3 manage.py runserver
 ```
 
